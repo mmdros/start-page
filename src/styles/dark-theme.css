@@ -38,12 +38,12 @@
 .switch-design {
   display: flex;
   align-items: center;
-  gap: var(--space-sm)
+  gap: var(--space-sm);
 }
 
-.fa-regular{
+.fa-regular {
   font-size: 26px;
-    color: var(--clr-neutral-800);
+  color: var(--clr-neutral-800);
 }
 
 input:checked + .slider {
@@ -70,18 +70,20 @@ body.dark {
 
   .hero,
   .hero-right {
-  grid-column: 3;
-  display: grid;
-  height: 100%; 
-  min-height: 80vh;
-  overflow: hidden;
-}
-
+    grid-column: 3;
+    display: grid;
+    height: 100%;
+    min-height: 80vh;
+    overflow: hidden;
+  }
+  .hero {
+    background-color: var(--clr-neutral-800);
+  }
   .hero h1 {
     color: var(--clr-neutral-100);
   }
 
-  .fa-regular{
+  .fa-regular {
     color: var(--clr-neutral-200);
-}
+  }
 }

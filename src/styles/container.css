@@ -6,6 +6,7 @@
   align-items: center;
   flex: 1;
   overflow: hidden;
+  background-color: var(--clr-neutral-200);
 }
 
 .hero-left {
@@ -63,7 +64,7 @@
   grid-column: 1;
   grid-row: 1 / 1;
   width: 100%;
-  height: 80vh;
+  height: 81vh;
   object-fit: cover;
   display: block;
 }
