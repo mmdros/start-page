@@ -127,9 +127,20 @@
   align-items: center;
 }
 
-.social-links {
+.social-links ul {
   display: flex;
   gap: var(--space-md);
+}
+
+.social-links ul li {
+  display: flex;
+  font-size: 1.2rem;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border: 1px solid var(--clr-neutral-200);
+  border-radius: var(--br-radius-round);
 }
 
 .social-links a {
