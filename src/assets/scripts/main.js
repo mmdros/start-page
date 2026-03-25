@@ -1,0 +1,48 @@
+// Main entry point
+document.addEventListener('DOMContentLoaded', () => {
+  console.log('Projeto iniciado com sucesso!');
+
+  // Update current year in footer
+  const yearSpan = document.getElementById('current-year');
+  if (yearSpan) {
+    yearSpan.textContent = new Date().getFullYear();
+  }
+
+  // Smooth scroll for internal links
+  document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+      const targetId = this.getAttribute('href');
+      if (targetId === '#') return;
+      
+      e.preventDefault();
+      const targetElement = document.querySelector(targetId);
+      
+      if (targetElement) {
+        targetElement.scrollIntoView({
+          behavior: 'smooth'
+        });
+      }
+    });
+  });
+});
+
+const toggle = document.getElementById('theme-toggle');
+
+const body = document.body;
+
+const savedTheme = localStorage.getItem('theme');
+
+if(savedTheme) {
+    body.classList.add(savedTheme);
+    toggle.checked = true;
+}
+
+toggle.addEventListener('click', () => {
+    if(toggle.checked) {
+        body.classList.add('dark');
+        localStorage.setItem('theme', 'dark');
+    } else {
+        body.classList.remove('dark');
+        localStorage.removeItem('theme');
+    }
+});

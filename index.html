@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Descrição clara e objetiva sobre o que seu projeto faz." />
+    <meta name="author" content="Seu Nome/Organização" />
+    <meta name="keywords" content="frontend, web design, html, css, javascript" />
+
+    <!-- Favicon -->
+    <link rel="icon" href="./src/assets/images/favicon.svg" type="image/svg" />
+
+    <!-- Estilos (Hierarquia sugerida) -->
+    <link rel="stylesheet" href="./src/styles/reset.css" />
+    <link rel="stylesheet" href="./src/styles/variables.css" />
+    <link rel="stylesheet" href="./src/styles/base.css" />
+    <link rel="stylesheet" href="./src/styles/global.css" />
+
+    <title>Nome do Projeto | Seu Slogan ou Descrição Curta</title>
+  </head>
+  <body>
+    <!-- Cabeçalho Principal -->
+    <header id="main-header" class="header">
+      <div class="container">
+        <nav class="main-nav" aria-label="Navegação Principal">
+          <ul>
+            <li><a href="#home">Início</a></li>
+            <!-- <li><a href="#services">Serviços</a></li> -->
+            <li><a href="#portifolio">Portifólio</a></li>
+            <li><a href="#contact">Contato</a></li>
+          </ul>
+        </nav>
+        <div class="logo">
+          <a href="#">
+            <img class="logo-preta" src="./src/assets/images/logo_matheus-dev (Preto).png" />
+          </a>
+        </div>
+        <div class="nav-actions">
+          <ul>
+            <li>
+              <select id="language-select">
+                <option value="pt">Português</option>
+                <option value="en">English</option>
+              </select>
+            </li>
+            <li>
+              <label class="switch">
+                <input type="checkbox" id="theme-toggle" />
+                <span class="slider"></span>
+              </label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </header>
+
+    <!-- Conteúdo Principal -->
+    <main id="main-content">
+      <section class="hero">
+        <div class="hero-left">
+          <div class="container">
+            <h1 class="visually-hidden">Matheus Medeiros — Web Developer</h1>
+
+            <p>Me chamo Matheus - Construindo experiências web responsivas e visualmente envolventes com propósito.</p>
+
+            <div class="actions">
+              <a href="#" class="btn btn-primary">Saiba mais</a>
+              <a href="#" class="btn btn-secondary">Entrar em contato</a>
+            </div>
+          </div>
+        </div>
+
+        <!-- 🔥 AGORA ELE É UMA COLUNA REAL -->
+        <div class="vertical-name">
+          <span>MEDEIROS</span>
+          <span>MATHEUS</span>
+        </div>
+
+        <div class="hero-right">
+          <img src="./src/assets/images/hero-right-bg.jpg" />
+        </div>
+      </section>
+
+      <!-- Adicione outras seções aqui -->
+    </main>
+
+    <!-- Rodapé -->
+    <footer id="main-footer" class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <p>&copy; 2026 - <span id="current-year"></span> Todos os direitos reservados.</p>
+
+          <div class="social-links">
+            <a href="#" aria-label="Visite nosso Instagram">Instagram</a>
+            <a href="#" aria-label="Visite nosso GitHub">GitHub</a>
+          </div>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="./src/assets/scripts/main.js" type="module" defer></script>
+  </body>
+</html>
