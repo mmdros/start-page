@@ -1,5 +1,6 @@
 :root {
   /* Colors */
+  --clr-no-color: transparent;
   --clr-primary: #3498db;
   --clr-secondary: #2ecc71;
   --clr-accent: #e74c3c;
