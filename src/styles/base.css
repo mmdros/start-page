@@ -2,7 +2,7 @@ html, body {
   height: 100vh;
   margin: 0;
   padding: 0;
-  overflow: hidden; /* Prevent overall scroll if hero is exactly 100vh */
+  overflow: hidden;
 }
 
 body {
