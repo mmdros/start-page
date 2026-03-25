@@ -187,6 +187,17 @@
   border-radius: 50%;
 }
 
+.switch-design {
+  display: flex;
+  align-items: center;
+  gap: var(--space-sm)
+}
+
+.fa-regular{
+  font-size: 26px;
+    color: var(--clr-neutral-800);
+}
+
 input:checked + .slider {
   background-color: #2196f3;
 }
@@ -217,6 +228,10 @@ body.dark {
   .hero h1 {
     color: var(--clr-neutral-100);
   }
+
+  .fa-regular{
+    color: var(--clr-neutral-200);
+}
 }
 
 /*Hidden-Elements*/
